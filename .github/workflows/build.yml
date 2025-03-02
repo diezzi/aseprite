@@ -55,7 +55,7 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
-    - uses: seanmiddleditch/gha-setup-ninja@master
+    - uses: actions/upload-artifact@v3
       with:
         name: aseprite
         path: |
